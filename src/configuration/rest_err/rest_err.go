@@ -16,7 +16,7 @@ type Causes struct {
 	Message string `json:"message"`
 }
 
-func (*RestErr) Error() string {
+func (r *RestErr) Error() string {
 	return r.Message
 }
 
